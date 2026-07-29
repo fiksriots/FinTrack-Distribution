@@ -1,35 +1,43 @@
-# FinTrack Studio v4.0.0
+# FinTrack Studio v4.0.0 🚀
 
-A professional-grade personal finance manager for Android, designed to help you track, analyze, and optimize your financial life with ease and security.
+FinTrack Studio adalah aplikasi pengelola keuangan pribadi profesional untuk Android yang dirancang untuk membantu Anda melacak, menganalisis, dan mengoptimalkan kondisi finansial Anda dengan mudah, cerdas, dan aman.
 
-## 🚀 What's New in v4.0.0
-- **📚 Multi-Book Support**: Create and manage multiple independent financial books (e.g., Personal, Business, Travel).
-- **🏷️ Advanced Tagging System**: Support for hierarchical Tags and Sub-tags for better transaction organization.
-- **🤖 AI Receipt Scanning**: Leverage ML Kit for OCR to automatically extract transaction data from receipt photos.
-- **📊 Enhanced Reports**: New report visualizations and improved UI centering for the Reports tab.
-- **📈 Export to Excel**: In addition to PDF, you can now export your financial data to `.xlsx` format for advanced spreadsheet analysis.
-- **📖 Interactive Guide**: A new "How to Use" menu in the Profile section to help you get started quickly.
-- **🌐 Full Localization**: Now supports both **English** and **Indonesian** languages.
-- **🛠️ Stability & Performance**: Fixed KSP incremental build issues and optimized data processing.
+## 🌟 Mengapa Memilih FinTrack Studio?
 
-## ✨ Core Features
-- **Transaction Management**: Easily log income, expenses, and transfers.
-- **Budgeting**: Set monthly limits per category and track your progress.
-- **Account/Wallet Management**: Manage cash, bank accounts, and credit cards.
-- **Recurring Transactions**: Automate your monthly bills and subscriptions.
-- **Savings Goals**: Plan and save for your future dreams.
-- **Security**: Privacy mode (hide balances) and Biometric/PIN lock support.
-- **Cloud Sync**: Securely backup and restore your data using Google Drive.
+FinTrack Studio bukan sekadar aplikasi pencatat keuangan biasa. Kami mengintegrasikan teknologi modern seperti kecerdasan buatan (AI) dan keamanan tingkat tinggi untuk memberikan pengalaman manajemen aset yang komprehensif.
 
-## 🛠️ Technical Stack
-- **UI**: 100% Jetpack Compose (Modern Declarative UI)
-- **Architecture**: MVVM with Clean Architecture principles
-- **Database**: Room Persistence Library
-- **Dependency Injection**: Hilt (Dagger)
-- **Background Tasks**: WorkManager
-- **AI/ML**: ML Kit (Text Recognition)
-- **Networking/Cloud**: Google Drive API for backups
-- **State Management**: Kotlin Coroutines & Flow
+## 🆕 Fitur Terbaru di v4.0.0
 
-## 📄 License
-FinTrack Studio © 2026 by fikriots.id. All rights reserved.
+- **📚 Dukungan Multi-Buku**: Pisahkan catatan keuangan pribadi, bisnis, atau proyek khusus Anda dalam buku yang berbeda tanpa tercampur.
+- **🏷️ Sistem Tag Lanjutan**: Kategorisasi transaksi lebih mendalam dengan dukungan hirarki Tag dan Sub-tag untuk pengelompokan yang lebih rapi.
+- **🤖 Pemindaian Struk Berbasis AI**: Cukup foto struk belanja Anda, dan biarkan teknologi OCR dari Google ML Kit mengekstrak data transaksi secara otomatis.
+- **📊 Laporan Interaktif & Terpusat**: Visualisasi data yang lebih baik dengan grafik yang diperbarui dan tata letak laporan yang lebih intuitif.
+- **📈 Ekspor Excel & PDF**: Simpan laporan Anda dalam format PDF untuk dokumentasi atau format `.xlsx` (Excel) untuk analisis data yang lebih mendalam.
+- **📖 Panduan Pengguna Baru**: Menu "Cara Penggunaan" yang interaktif langsung di dalam aplikasi untuk membantu Anda memulai dengan cepat.
+- **🛠️ Performa Lebih Stabil**: Optimasi sistem build KSP dan peningkatan kecepatan pemrosesan data.
+
+## ✨ Fitur Unggulan Lainnya
+
+- **💰 Manajemen Transaksi**: Catat pemasukan, pengeluaran, dan transfer antar rekening dengan sangat cepat.
+- **📅 Anggaran (Budgeting)**: Atur batas pengeluaran bulanan per kategori dan dapatkan peringatan sebelum Anda melampauinya.
+- **💳 Kelola Banyak Rekening**: Pantau saldo Tunai, Bank, hingga Kartu Kredit di satu tempat.
+- **🔄 Transaksi Rutin & Langganan**: Kelola tagihan Netflix, Spotify, atau tagihan rutin lainnya agar tidak ada yang terlewat.
+- **🎯 Target Menabung**: Rencanakan pembelian impian Anda dengan fitur target menabung yang memotivasi.
+- **🤝 Hutang & Piutang**: Pantau siapa yang berhutang pada Anda atau cicilan apa yang harus Anda bayar.
+- **🔒 Keamanan Maksimal**: Lindungi data Anda dengan Kunci PIN, Sidik Jari (Biometrik), serta Mode Privasi untuk menyembunyikan saldo di tempat umum.
+- **☁️ Sinkronisasi Awan**: Cadangkan data Anda dengan aman ke Google Drive pribadi Anda untuk kemudahan pemulihan di perangkat lain.
+
+## 🛠️ Detail Teknis
+
+Aplikasi ini dibangun menggunakan teknologi terbaru di ekosistem Android untuk memastikan performa dan keamanan terbaik:
+
+- **Antarmuka (UI)**: 100% Jetpack Compose (Modern & Responsif).
+- **Arsitektur**: MVVM (Model-View-ViewModel) dengan prinsip Clean Architecture.
+- **Database**: Room Persistence Library untuk penyimpanan data lokal yang cepat.
+- **Dependency Injection**: Hilt (Dagger) untuk manajemen kode yang modular.
+- **Proses Latar Belakang**: WorkManager untuk sinkronisasi dan pengingat otomatis.
+- **Kecerdasan Buatan**: Google ML Kit untuk pengenalan teks pada struk (OCR).
+- **Layanan Cloud**: Google Drive API untuk sistem cadangan data.
+
+---
+**FinTrack Studio © 2026** oleh **fikriots.id**. Seluruh hak cipta dilindungi undang-undang.
