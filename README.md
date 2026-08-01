@@ -1,43 +1,37 @@
-# FinTrack Studio v4.0.0 🚀
+# FinTrack v5.0.0 🚀
 
-FinTrack Studio adalah aplikasi pengelola keuangan pribadi profesional untuk Android yang dirancang untuk membantu Anda melacak, menganalisis, dan mengoptimalkan kondisi finansial Anda dengan mudah, cerdas, dan aman.
+FinTrack adalah aplikasi pengelola keuangan pribadi profesional untuk Android yang dirancang untuk membantu Anda memantau pengeluaran, mengelola anggaran, dan berkolaborasi dengan keluarga atau teman dalam satu genggaman.
 
-## 🌟 Mengapa Memilih FinTrack Studio?
+## 🌟 Mengapa Memilih FinTrack?
 
-FinTrack Studio bukan sekadar aplikasi pencatat keuangan biasa. Kami mengintegrasikan teknologi modern seperti kecerdasan buatan (AI) dan keamanan tingkat tinggi untuk memberikan pengalaman manajemen aset yang komprehensif.
+FinTrack bukan sekadar aplikasi pencatat keuangan biasa. Kami mengintegrasikan teknologi modern untuk memberikan pengalaman terbaik:
 
-## 🆕 Fitur Terbaru di v4.0.0
+1.  **Analisis Keuangan AI (Gemini 1.5 Flash)**: Dapatkan saran hemat personal langsung di dashboard Anda.
+2.  **Pindai Struk Otomatis (OCR)**: Catat transaksi hanya dengan memotret struk belanja.
+3.  **Sinkronisasi Cloud Real-time**: Data Anda aman di cloud dan selalu sinkron antar perangkat.
+4.  **Kas Bersama (Kolaborasi)**: Bagikan buku catatan dengan orang lain untuk manajemen keuangan grup.
+5.  **Offline-First**: Aplikasi tetap bisa digunakan tanpa internet. Data akan sinkron otomatis saat online.
 
-- **📚 Dukungan Multi-Buku**: Pisahkan catatan keuangan pribadi, bisnis, atau proyek khusus Anda dalam buku yang berbeda tanpa tercampur.
-- **🏷️ Sistem Tag Lanjutan**: Kategorisasi transaksi lebih mendalam dengan dukungan hirarki Tag dan Sub-tag untuk pengelompokan yang lebih rapi.
-- **🤖 Pemindaian Struk Berbasis AI**: Cukup foto struk belanja Anda, dan biarkan teknologi OCR dari Google ML Kit mengekstrak data transaksi secara otomatis.
-- **📊 Laporan Interaktif & Terpusat**: Visualisasi data yang lebih baik dengan grafik yang diperbarui dan tata letak laporan yang lebih intuitif.
-- **📈 Ekspor Excel & PDF**: Simpan laporan Anda dalam format PDF untuk dokumentasi atau format `.xlsx` (Excel) untuk analisis data yang lebih mendalam.
-- **📖 Panduan Pengguna Baru**: Menu "Cara Penggunaan" yang interaktif langsung di dalam aplikasi untuk membantu Anda memulai dengan cepat.
-- **🛠️ Performa Lebih Stabil**: Optimasi sistem build KSP dan peningkatan kecepatan pemrosesan data.
+## 📱 Fitur Utama
 
-## ✨ Fitur Unggulan Lainnya
+- **Pencatatan Cepat**: Dukungan multi-mata uang (IDR, USD, SGD, EUR).
+- **Manajemen Dompet**: Pantau saldo di berbagai bank, e-wallet, hingga kartu kredit.
+- **Anggaran & Target**: Atur limit pengeluaran dan pantau kemajuan tabungan Anda.
+- **Keamanan Berlapis**: Kunci PIN, Biometrik (Sidik Jari), dan Mode Privasi (Sembunyikan saldo).
+- **Laporan Visual**: Grafik interaktif dan ekspor laporan ke format PDF, Excel, atau CSV.
+- **Customizable**: Ganti tema warna dan ikon aplikasi sesuai keinginan.
 
-- **💰 Manajemen Transaksi**: Catat pemasukan, pengeluaran, dan transfer antar rekening dengan sangat cepat.
-- **📅 Anggaran (Budgeting)**: Atur batas pengeluaran bulanan per kategori dan dapatkan peringatan sebelum Anda melampauinya.
-- **💳 Kelola Banyak Rekening**: Pantau saldo Tunai, Bank, hingga Kartu Kredit di satu tempat.
-- **🔄 Transaksi Rutin & Langganan**: Kelola tagihan Netflix, Spotify, atau tagihan rutin lainnya agar tidak ada yang terlewat.
-- **🎯 Target Menabung**: Rencanakan pembelian impian Anda dengan fitur target menabung yang memotivasi.
-- **🤝 Hutang & Piutang**: Pantau siapa yang berhutang pada Anda atau cicilan apa yang harus Anda bayar.
-- **🔒 Keamanan Maksimal**: Lindungi data Anda dengan Kunci PIN, Sidik Jari (Biometrik), serta Mode Privasi untuk menyembunyikan saldo di tempat umum.
-- **☁️ Sinkronisasi Awan**: Cadangkan data Anda dengan aman ke Google Drive pribadi Anda untuk kemudahan pemulihan di perangkat lain.
+## 🚀 Instalasi & Persiapan
 
-## 🛠️ Detail Teknis
+1.  **Clone Repository**: `git clone https://github.com/fiksriots/FinTrack.git`
+2.  **Firebase Setup**: Pastikan `google-services.json` sudah terpasang di folder `app/`.
+3.  **Gemini AI**: Masukkan API Key Anda di `util/GeminiHelper.kt`.
+4.  **Build**: Jalankan via Android Studio (Dukungan Gradle 8.5+).
 
-Aplikasi ini dibangun menggunakan teknologi terbaru di ekosistem Android untuk memastikan performa dan keamanan terbaik:
+## 📄 Legal
 
-- **Antarmuka (UI)**: 100% Jetpack Compose (Modern & Responsif).
-- **Arsitektur**: MVVM (Model-View-ViewModel) dengan prinsip Clean Architecture.
-- **Database**: Room Persistence Library untuk penyimpanan data lokal yang cepat.
-- **Dependency Injection**: Hilt (Dagger) untuk manajemen kode yang modular.
-- **Proses Latar Belakang**: WorkManager untuk sinkronisasi dan pengingat otomatis.
-- **Kecerdasan Buatan**: Google ML Kit untuk pengenalan teks pada struk (OCR).
-- **Layanan Cloud**: Google Drive API untuk sistem cadangan data.
+Penggunaan aplikasi ini tunduk pada [Kebijakan Privasi](privacy_policy.md) dan [Syarat Penggunaan](terms_of_use.md) kami.
 
 ---
-**FinTrack Studio © 2026** oleh **fikriots.id**. Seluruh hak cipta dilindungi undang-undang.
+
+**FinTrack © 2026** oleh **fikriots.id**. Seluruh hak cipta dilindungi undang-undang.
