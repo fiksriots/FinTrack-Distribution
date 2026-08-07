@@ -1,4 +1,8 @@
-# FinTrack v6.8.1 🚀
+<p align="center">
+  <img src="assets/logo.webp" width="160" alt="FinTrack Logo">
+</p>
+
+# FinTrack v6.8.6 🚀
 
 FinTrack adalah aplikasi pengelola keuangan pribadi profesional untuk Android yang dirancang untuk membantu Anda memantau pengeluaran, mengelola anggaran, dan berkolaborasi dengan keluarga atau teman dalam satu genggaman.
 
