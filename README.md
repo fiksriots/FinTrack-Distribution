@@ -2,7 +2,7 @@
   <img src="assets/logo.webp" width="160" alt="FinTrack Logo">
 </p>
 
-# FinTrack v7.2.0 🚀
+# FinTrack v7.4.2 🚀
 
 FinTrack adalah aplikasi pengelola keuangan pribadi profesional untuk Android yang dirancang untuk membantu Anda memantau pengeluaran, mengelola anggaran, dan berkolaborasi dengan keluarga atau teman dalam satu genggaman.
 
@@ -10,7 +10,7 @@ FinTrack adalah aplikasi pengelola keuangan pribadi profesional untuk Android ya
 
 FinTrack bukan sekadar aplikasi pencatat keuangan biasa. Kami mengintegrasikan teknologi modern untuk memberikan pengalaman terbaik:
 
-1.  **Analisis Keuangan AI (Gemini 1.5 Flash)**: Dapatkan saran hemat personal langsung di dashboard Anda.
+1.  **Analisis Keuangan Cerdas**: Pantau kesehatan keuangan Anda langsung di dashboard.
 2.  **Pindai Struk Otomatis (OCR)**: Catat transaksi hanya dengan memotret struk belanja.
 3.  **Sinkronisasi Cloud Real-time**: Data Anda aman di cloud dan selalu sinkron antar perangkat.
 4.  **Kas Bersama (Kolaborasi)**: Bagikan buku catatan dengan orang lain untuk manajemen keuangan grup.
@@ -29,8 +29,7 @@ FinTrack bukan sekadar aplikasi pencatat keuangan biasa. Kami mengintegrasikan t
 
 1.  **Clone Repository**: `git clone https://github.com/fiksriots/FinTrack.git`
 2.  **Firebase Setup**: Pastikan `google-services.json` sudah terpasang di folder `app/`.
-3.  **Gemini AI**: Masukkan API Key Anda di `util/GeminiHelper.kt`.
-4.  **Build**: Jalankan via Android Studio (Dukungan Gradle 8.5+).
+3.  **Build**: Jalankan via Android Studio (Dukungan Gradle 8.5+).
 
 ## 📄 Changelog
 
