@@ -42,3 +42,26 @@ document.getElementById('copy-hash').addEventListener('click',async()=>{
  try {await navigator.clipboard.writeText(document.getElementById('digest').textContent);status.textContent='Checksum disalin.';} catch {status.textContent='Pilih dan salin teks checksum di atas.';}
 });
 refreshReleases();
+
+// Presentation-only tabs; every amount and profile in the preview is fictional.
+const previewTabs = [...document.querySelectorAll('[data-preview]')];
+function selectPreview(tab) {
+ previewTabs.forEach(item => {
+  const selected = item === tab;
+  item.setAttribute('aria-selected', String(selected));
+  item.tabIndex = selected ? 0 : -1;
+  document.getElementById(item.getAttribute('aria-controls')).hidden = !selected;
+ });
+}
+previewTabs.forEach((tab,index) => {
+ tab.addEventListener('click', () => selectPreview(tab));
+ tab.addEventListener('keydown', event => {
+  let next;
+  if (event.key === 'ArrowRight') next=(index+1)%previewTabs.length;
+  if (event.key === 'ArrowLeft') next=(index+previewTabs.length-1)%previewTabs.length;
+  if (event.key === 'Home') next=0;
+  if (event.key === 'End') next=previewTabs.length-1;
+  if (next === undefined) return;
+  event.preventDefault();selectPreview(previewTabs[next]);previewTabs[next].focus();
+ });
+});

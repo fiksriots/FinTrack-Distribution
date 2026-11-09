@@ -8,7 +8,7 @@ Website unduhan aplikasi FinTrack untuk Android. Identitas visual mengikuti apli
 - Versi, ukuran file, tanggal rilis, checksum SHA-256, dan empat rilis terbaru diperbarui dari API GitHub saat halaman dibuka.
 - Jika API tidak tersedia atau terkena rate limit, halaman tetap menampilkan rilis v8.9.3 yang diverifikasi pada 9 November 2026, disertai pemberitahuan dan tautan semua rilis.
 - Panduan instalasi, penjelasan fitur, dan FAQ dalam bahasa Indonesia.
-- Tampilan responsif tanpa framework atau dependensi build. Tampilan ponsel pada hero adalah ilustrasi dengan data contoh.
+- Tampilan responsif tanpa framework atau dependensi build. Tampilan ponsel pada hero mengikuti capture aplikasi, dengan empat tab interaktif: Riwayat, Grafik, Laporan, dan Saya. Semua profil dan nominal memakai data fiktif; capture asli yang memuat data pribadi tidak disertakan. Navigasi tab mendukung klik dan tombol panah keyboard.
 
 ## Menjalankan lokal
 
