@@ -65,3 +65,36 @@ previewTabs.forEach((tab,index) => {
   event.preventDefault();selectPreview(previewTabs[next]);previewTabs[next].focus();
  });
 });
+
+const reportButtons = [...document.querySelectorAll('[data-report]')];
+reportButtons.forEach(button => button.addEventListener('click', () => {
+ reportButtons.forEach(item => {
+  const selected=item===button;
+  item.setAttribute('aria-pressed',String(selected));
+  document.getElementById(`report-${item.dataset.report}`).hidden=!selected;
+ });
+}));
+const txKindButtons = [...document.querySelectorAll('[data-tx-kind]')];
+const categoryChips = [...document.querySelectorAll('#demo-categories button')];
+function selectChip(button, peers) {peers.forEach(item=>item.setAttribute('aria-pressed',String(item===button)));}
+txKindButtons.forEach(button => button.addEventListener('click', () => {
+ selectChip(button,txKindButtons);
+ const income=button.dataset.txKind==='income';
+ document.getElementById('demo-items').innerHTML=income?'Gaji pokok: Rp40.000<br>Tunjangan: Rp10.000<br><b>Total: Rp50.000</b>':'Sayur: Rp30.000<br>Buah: Rp20.000<br><b>Total: Rp50.000</b>';
+ categoryChips.forEach((chip,index)=>chip.textContent=(income?['Gaji','Bonus','Lainnya']:['Belanja','Makanan','Transportasi'])[index]);
+ selectChip(categoryChips[0],categoryChips);
+ document.querySelector('.demo-subcategory').textContent=income?'Pendapatan bulanan':'Kebutuhan harian';
+}));
+document.querySelectorAll('.demo-chips').forEach(group => {
+ const chips=[...group.querySelectorAll('button')];
+ chips.forEach(button=>button.addEventListener('click',()=>{
+  selectChip(button,chips);
+  if(group.id==='demo-categories') document.querySelector('.demo-subcategory').textContent=['Kebutuhan harian','Makan siang','Perjalanan','Pendapatan bulanan','Bonus kerja','Pemasukan lainnya'][txKindButtons[1].getAttribute('aria-pressed')==='true'?chips.indexOf(button)+3:chips.indexOf(button)];
+ }));
+});
+document.getElementById('demo-items-toggle').addEventListener('click',event=>{
+ const button=event.currentTarget;
+ const selected=button.getAttribute('aria-checked')!=='true';
+ button.setAttribute('aria-checked',String(selected));
+ document.getElementById('demo-items').hidden=!selected;
+});
